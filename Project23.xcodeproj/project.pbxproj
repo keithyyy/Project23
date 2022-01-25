@@ -9,24 +9,44 @@
 /* Begin PBXBuildFile section */
 		2DC9E5D22793BFDF0050CD51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9E5D12793BFDF0050CD51 /* AppDelegate.swift */; };
 		2DC9E5D42793BFDF0050CD51 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5D32793BFDF0050CD51 /* GameScene.sks */; };
-		2DC9E5D62793BFDF0050CD51 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5D52793BFDF0050CD51 /* Actions.sks */; };
 		2DC9E5D82793BFDF0050CD51 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9E5D72793BFDF0050CD51 /* GameScene.swift */; };
 		2DC9E5DA2793BFDF0050CD51 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC9E5D92793BFDF0050CD51 /* GameViewController.swift */; };
 		2DC9E5DD2793BFDF0050CD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5DB2793BFDF0050CD51 /* Main.storyboard */; };
 		2DC9E5DF2793BFE00050CD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5DE2793BFE00050CD51 /* Assets.xcassets */; };
 		2DC9E5E22793BFE00050CD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5E02793BFE00050CD51 /* LaunchScreen.storyboard */; };
+		2DC9E5F32793C0CA0050CD51 /* sliceFuse.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5E82793C0C90050CD51 /* sliceFuse.sks */; };
+		2DC9E5F42793C0CA0050CD51 /* sliceHitEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5E92793C0C90050CD51 /* sliceHitEnemy.sks */; };
+		2DC9E5F52793C0CA0050CD51 /* launch.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5EA2793C0C90050CD51 /* launch.caf */; };
+		2DC9E5F62793C0CA0050CD51 /* sliceBombFuse.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5EB2793C0C90050CD51 /* sliceBombFuse.caf */; };
+		2DC9E5F72793C0CA0050CD51 /* swoosh3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5EC2793C0C90050CD51 /* swoosh3.caf */; };
+		2DC9E5F82793C0CA0050CD51 /* wrong.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5ED2793C0CA0050CD51 /* wrong.caf */; };
+		2DC9E5F92793C0CA0050CD51 /* sliceHitBomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5EE2793C0CA0050CD51 /* sliceHitBomb.sks */; };
+		2DC9E5FA2793C0CA0050CD51 /* explosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5EF2793C0CA0050CD51 /* explosion.caf */; };
+		2DC9E5FB2793C0CA0050CD51 /* swoosh1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5F02793C0CA0050CD51 /* swoosh1.caf */; };
+		2DC9E5FC2793C0CA0050CD51 /* swoosh2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5F12793C0CA0050CD51 /* swoosh2.caf */; };
+		2DC9E5FD2793C0CA0050CD51 /* whack.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9E5F22793C0CA0050CD51 /* whack.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DC9E5CE2793BFDF0050CD51 /* Project23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project23.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC9E5D12793BFDF0050CD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DC9E5D32793BFDF0050CD51 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		2DC9E5D52793BFDF0050CD51 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2DC9E5D72793BFDF0050CD51 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		2DC9E5D92793BFDF0050CD51 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2DC9E5DC2793BFDF0050CD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DC9E5DE2793BFE00050CD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DC9E5E12793BFE00050CD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DC9E5E82793C0C90050CD51 /* sliceFuse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceFuse.sks; sourceTree = "<group>"; };
+		2DC9E5E92793C0C90050CD51 /* sliceHitEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitEnemy.sks; sourceTree = "<group>"; };
+		2DC9E5EA2793C0C90050CD51 /* launch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = launch.caf; sourceTree = "<group>"; };
+		2DC9E5EB2793C0C90050CD51 /* sliceBombFuse.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sliceBombFuse.caf; sourceTree = "<group>"; };
+		2DC9E5EC2793C0C90050CD51 /* swoosh3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh3.caf; sourceTree = "<group>"; };
+		2DC9E5ED2793C0CA0050CD51 /* wrong.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.caf; sourceTree = "<group>"; };
+		2DC9E5EE2793C0CA0050CD51 /* sliceHitBomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sliceHitBomb.sks; sourceTree = "<group>"; };
+		2DC9E5EF2793C0CA0050CD51 /* explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.caf; sourceTree = "<group>"; };
+		2DC9E5F02793C0CA0050CD51 /* swoosh1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh1.caf; sourceTree = "<group>"; };
+		2DC9E5F12793C0CA0050CD51 /* swoosh2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh2.caf; sourceTree = "<group>"; };
+		2DC9E5F22793C0CA0050CD51 /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +81,22 @@
 			children = (
 				2DC9E5D12793BFDF0050CD51 /* AppDelegate.swift */,
 				2DC9E5D32793BFDF0050CD51 /* GameScene.sks */,
-				2DC9E5D52793BFDF0050CD51 /* Actions.sks */,
 				2DC9E5D72793BFDF0050CD51 /* GameScene.swift */,
 				2DC9E5D92793BFDF0050CD51 /* GameViewController.swift */,
 				2DC9E5DB2793BFDF0050CD51 /* Main.storyboard */,
 				2DC9E5DE2793BFE00050CD51 /* Assets.xcassets */,
 				2DC9E5E02793BFE00050CD51 /* LaunchScreen.storyboard */,
+				2DC9E5EF2793C0CA0050CD51 /* explosion.caf */,
+				2DC9E5EA2793C0C90050CD51 /* launch.caf */,
+				2DC9E5EB2793C0C90050CD51 /* sliceBombFuse.caf */,
+				2DC9E5E82793C0C90050CD51 /* sliceFuse.sks */,
+				2DC9E5EE2793C0CA0050CD51 /* sliceHitBomb.sks */,
+				2DC9E5E92793C0C90050CD51 /* sliceHitEnemy.sks */,
+				2DC9E5F02793C0CA0050CD51 /* swoosh1.caf */,
+				2DC9E5F12793C0CA0050CD51 /* swoosh2.caf */,
+				2DC9E5EC2793C0C90050CD51 /* swoosh3.caf */,
+				2DC9E5F22793C0CA0050CD51 /* whack.caf */,
+				2DC9E5ED2793C0CA0050CD51 /* wrong.caf */,
 			);
 			path = Project23;
 			sourceTree = "<group>";
@@ -130,10 +160,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DC9E5DD2793BFDF0050CD51 /* Main.storyboard in Resources */,
+				2DC9E5FB2793C0CA0050CD51 /* swoosh1.caf in Resources */,
 				2DC9E5D42793BFDF0050CD51 /* GameScene.sks in Resources */,
+				2DC9E5F72793C0CA0050CD51 /* swoosh3.caf in Resources */,
+				2DC9E5F32793C0CA0050CD51 /* sliceFuse.sks in Resources */,
+				2DC9E5F92793C0CA0050CD51 /* sliceHitBomb.sks in Resources */,
+				2DC9E5F52793C0CA0050CD51 /* launch.caf in Resources */,
+				2DC9E5FA2793C0CA0050CD51 /* explosion.caf in Resources */,
+				2DC9E5F62793C0CA0050CD51 /* sliceBombFuse.caf in Resources */,
+				2DC9E5F42793C0CA0050CD51 /* sliceHitEnemy.sks in Resources */,
+				2DC9E5FC2793C0CA0050CD51 /* swoosh2.caf in Resources */,
+				2DC9E5FD2793C0CA0050CD51 /* whack.caf in Resources */,
 				2DC9E5DF2793BFE00050CD51 /* Assets.xcassets in Resources */,
+				2DC9E5F82793C0CA0050CD51 /* wrong.caf in Resources */,
 				2DC9E5E22793BFE00050CD51 /* LaunchScreen.storyboard in Resources */,
-				2DC9E5D62793BFDF0050CD51 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +341,9 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -329,8 +370,9 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
