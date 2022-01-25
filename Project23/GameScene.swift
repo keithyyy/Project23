@@ -5,6 +5,12 @@
 //  Created by Keith Crooc on 2022-01-15.
 //
 
+// 1. Remove the magic numbers in the createEnemy() method. Define them as constant properties of your class, give them useful names ✅
+
+// 2. Create a new, fast-moving type of enemy that awards the player bonus points if they hit it
+
+// 3. Add a "game over" sprite node to the game scene when the player loses all lives
+
 import SpriteKit
 import AVFoundation
 
@@ -16,6 +22,14 @@ enum ForceBomb {
 enum SequenceType: CaseIterable {
     case oneNoBomb, one, twoWithOneBomb, two, three, four, chain, fastChain
 }
+
+enum ScreenViews {
+    static let leftScreen = 64
+    static let rightScreen = 960
+    static let sideSection = Int.random(in: 8...15)
+    static let middleSection = Int.random(in: 3...5)
+}
+
 
 class GameScene: SKScene {
     
@@ -140,6 +154,7 @@ class GameScene: SKScene {
             if node.name == "enemy" {
 //                destroy penguin
                 if let emitter = SKEmitterNode(fileNamed: "sliceHitEnemy") {
+                    emitter.position = node.position
                     addChild(emitter)
                 }
                 
@@ -321,21 +336,21 @@ class GameScene: SKScene {
         }
         
 //        position code below here
-        let randomPosition = CGPoint(x: Int.random(in: 64...960), y: -128)
+        let randomPosition = CGPoint(x: Int.random(in: ScreenViews.leftScreen...ScreenViews.rightScreen), y: -128)
         enemy.position = randomPosition
         
         let randomAngularVelocity = CGFloat.random(in: -3...3)
         let randomXVelocity: Int
         
         if randomPosition.x < 296 {
-            randomXVelocity = Int.random(in: 8...15)
+            randomXVelocity = ScreenViews.sideSection
         } else if randomPosition.x < 512 {
-            randomXVelocity = Int.random(in: 3...5)
+            randomXVelocity = ScreenViews.middleSection
         } else if randomPosition.x < 768 {
-            randomXVelocity = -Int.random(in: 3...5)
+            randomXVelocity = -ScreenViews.middleSection
             
         } else {
-            randomXVelocity = -Int.random(in: 24...32)
+            randomXVelocity = -ScreenViews.sideSection
         
         }
         
