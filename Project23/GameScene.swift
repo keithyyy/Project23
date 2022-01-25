@@ -9,7 +9,7 @@
 
 // 2. Create a new, fast-moving type of enemy that awards the player bonus points if they hit it ✅
 
-// 3. Add a "game over" sprite node to the game scene when the player loses all lives
+// 3. Add a "game over" sprite node to the game scene when the player loses all lives ✅
 
 import SpriteKit
 import AVFoundation
@@ -257,6 +257,11 @@ class GameScene: SKScene {
             liveImages[1].texture = SKTexture(imageNamed: "sliceLifeGone")
             liveImages[2].texture = SKTexture(imageNamed: "sliceLifeGone")
         }
+        
+        let gameOverScreen = SKSpriteNode(imageNamed: "gameOver")
+        gameOverScreen.position = CGPoint(x: 512, y: 384)
+        gameOverScreen.zPosition = 1
+        addChild(gameOverScreen)
     }
     
     
