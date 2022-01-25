@@ -7,7 +7,7 @@
 
 // 1. Remove the magic numbers in the createEnemy() method. Define them as constant properties of your class, give them useful names ✅
 
-// 2. Create a new, fast-moving type of enemy that awards the player bonus points if they hit it
+// 2. Create a new, fast-moving type of enemy that awards the player bonus points if they hit it ✅
 
 // 3. Add a "game over" sprite node to the game scene when the player loses all lives
 
@@ -30,6 +30,9 @@ enum ScreenViews {
     static let middleSection = Int.random(in: 3...5)
 }
 
+enum Speed {
+    static let specialSpeed = 32
+}
 
 class GameScene: SKScene {
     
@@ -178,6 +181,33 @@ class GameScene: SKScene {
                 
                 run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false))
                     
+            } else if node.name == "superEnemy" {
+                if let emitter = SKSpriteNode(fileNamed: "sliceHitEnemy") {
+                    emitter.position = node.position
+                    addChild(emitter)
+                }
+                
+                node.name = ""
+                node.physicsBody?.isDynamic = false
+                
+                let scaleOut = SKAction.scale(to: 0.001, duration: 0.2)
+                let fadeOut = SKAction.fadeOut(withDuration: 0.2)
+                
+                let group = SKAction.group([scaleOut, fadeOut])
+                
+                let seq = SKAction.sequence([group, .removeFromParent()])
+                node.run(seq)
+                
+                score += 5
+                
+                if let index = activeEnemies.firstIndex(of: node) {
+                    activeEnemies.remove(at: index)
+                    
+                }
+                
+                run(SKAction.playSoundFileNamed("whack.caf", waitForCompletion: false))
+                
+                
             } else if node.name == "bomb" {
 //                destroy bomb
 //                name bomb is related to bomb image, which sits in a bomb node parent
@@ -329,6 +359,13 @@ class GameScene: SKScene {
                 emitter.position = CGPoint(x: 76, y: 64)
                 enemy.addChild(emitter)
             }
+        } else if enemyType == 6 {
+          
+            enemy = SKSpriteNode(imageNamed: "DevilEmoji")
+            run(SKAction.playSoundFileNamed("launch.caf", waitForCompletion: false))
+            enemy.name = "superEnemy"
+            
+            
         } else {
             enemy = SKSpriteNode(imageNamed: "penguin")
             run(SKAction.playSoundFileNamed("launch.caf", waitForCompletion: false))
@@ -357,7 +394,14 @@ class GameScene: SKScene {
         let randomYVelocity = Int.random(in: 24...32)
         
         enemy.physicsBody = SKPhysicsBody(circleOfRadius: 64)
-        enemy.physicsBody?.velocity = CGVector(dx: randomXVelocity * 40, dy: randomYVelocity * 40)
+        
+        if enemy.name == "superEnemy" {
+            enemy.physicsBody?.velocity = CGVector(dx: Speed.specialSpeed * 30, dy: randomYVelocity * 40)
+        } else {
+            enemy.physicsBody?.velocity = CGVector(dx: randomXVelocity * 40, dy: randomYVelocity * 40)
+        }
+        
+        
         enemy.physicsBody?.angularVelocity = randomAngularVelocity
         enemy.physicsBody?.collisionBitMask = 0
         
@@ -399,6 +443,12 @@ class GameScene: SKScene {
                     node.removeAllActions()
                     
                     if node.name == "enemy" {
+                        node.name = ""
+                        subtractLife()
+                        
+                        node.removeFromParent()
+                        activeEnemies.remove(at: index)
+                    } else if node.name == "superEnemy" {
                         node.name = ""
                         subtractLife()
                         
